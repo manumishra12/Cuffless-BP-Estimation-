@@ -36,7 +36,7 @@ The dataset is split for training and validation, with performance evaluated usi
    - **Custom Dataset Class**: Manages the loading and preprocessing of ECG and PPG images along with their corresponding SBP and DBP values.
    - **Data Loader**: Efficiently batches the data for training and evaluation.
   
-<img src="data.png" alt="Small Image" width="700" height="350">
+<img src="data.png" alt="Small Image" width="500" height="550">
 
 
 ### Data Visualization
@@ -44,11 +44,11 @@ The dataset is split for training and validation, with performance evaluated usi
 The dataset of ECG and PPG values has been recorded in the excel / csv that has been converted to the waveform and after that these waveforms are converted to Bispectrum and Bicoherence plots using the Fourier series. 
 
 #### Waveform
-<img src="wave.png" alt="Small Image" width="700" height="350">
+<img src="wave.png" alt="Small Image" width="500" height="550">
 
 #### Bispectrum
-<img src="bispectrum.png" alt="Small Image" width="700" height="350">
+<img src="bispectrum.png" alt="Small Image" width="500" height="550">
 
 #### Bicoherence
-<img src="bicoherence.png" alt="Small Image" width="700" height="350">
+<img src="bicoherence.png" alt="Small Image" width="500" height="550">
 
