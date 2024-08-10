@@ -64,9 +64,9 @@ after each module.
 
 #### Architecture 
 
-<img src="swin.png" alt="Small Image" width="500" height="550">
+<img src="swin.png" alt="Small Image" width="700" height="550">
 
-<img src="swin2.png" alt="Small Image" width="500" height="550">
+<img src="swin2.png" alt="Small Image" width="700" height="550">
 
 
 ### Working of our model
@@ -74,14 +74,36 @@ after each module.
 In our model workflow, we begin by importing and preprocessing the dataset to prepare it for training. This includes loading and resizing images to 224x224 pixels, then converting them into tensors for PyTorch. We use a pretrained Swin Transformer model (swin_base_patch4_window7_224) to leverage its robust features. Our training objective is to minimize the Mean Absolute Error (MAE) loss, employing the Adam optimizer with a learning rate of 1e-4 for effective convergence. The training spans 300 epochs, allowing the model to learn and refine its weights. We monitor performance by plotting and printing results throughout the training process. This comprehensive approach integrates advanced techniques for developing a powerful image-processing model.
 
 Swin Model parameter:
- Loss function = Mean Absolute Error
- Batch Size for training = 32
- Batch Size for testing = 32
- Training Epoch = 300
- Adam Optimizer is used with Learning rate = 0.0001 (1e-4)
- Test data = 20%
+ Loss function = Mean Absolute Error <br>
+ Batch Size for training = 32 <br>
+ Batch Size for testing = 32 <br>
+ Training Epoch = 300 <br>
+ Adam Optimizer is used with Learning rate = 0.0001 (1e-4) <br>
+ Test data = 20% <br>
 
-<img src="working.png" alt="Small Image" width="500" height="550">
+<img src="working.png" alt="Small Image" width="700" height="550">
 
 
+### Result
 
+### Bispectrum
+
+#### ECG Dataset
+
+<img src="result.png" alt="Small Image" width="500" height="550">
+
+#### PPG Dataset
+
+<img src="result2.png" alt="Small Image" width="500" height="550">
+
+<hr>
+
+### Bicoherence
+
+#### ECG Dataset
+
+<img src="result.png" alt="Small Image" width="500" height="550">
+
+#### PPG Dataset
+
+<img src="result2.png" alt="Small Image" width="500" height="550">
