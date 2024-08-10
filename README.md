@@ -35,7 +35,9 @@ The dataset is split for training and validation, with performance evaluated usi
    - **Normalizing Images**: Pixel values are standardized to match the pre-trained model's training data distribution.
    - **Custom Dataset Class**: Manages the loading and preprocessing of ECG and PPG images along with their corresponding SBP and DBP values.
    - **Data Loader**: Efficiently batches the data for training and evaluation.
+
   
+#### Data Pre-Processing Flow
 <img src="data.png" alt="Small Image" width="500" height="550">
 
 
@@ -51,4 +53,35 @@ The dataset of ECG and PPG values has been recorded in the excel / csv that has 
 
 #### Bicoherence
 <img src="bicoherence.png" alt="Small Image" width="500" height="550">
+
+### Swin Transformer block:
+The Swin Transformer block replaces the standard multi-head self-attention (MSA) module in a traditional
+Transformer block with a shifted window-based MSA module, a Swin Transformer block comprises a
+shifted window-based MSA module followed by a 2-layer MLP with GELU nonlinearity in between.
+A Layer Norm (LN) layer is applied before each MSA module and MLP, and a residual connection is added
+after each module. 
+
+
+#### Architecture 
+
+<img src="swin.png" alt="Small Image" width="500" height="550">
+
+<img src="swin2.png" alt="Small Image" width="500" height="550">
+
+
+### Working of our model
+
+In our model workflow, we begin by importing and preprocessing the dataset to prepare it for training. This includes loading and resizing images to 224x224 pixels, then converting them into tensors for PyTorch. We use a pretrained Swin Transformer model (swin_base_patch4_window7_224) to leverage its robust features. Our training objective is to minimize the Mean Absolute Error (MAE) loss, employing the Adam optimizer with a learning rate of 1e-4 for effective convergence. The training spans 300 epochs, allowing the model to learn and refine its weights. We monitor performance by plotting and printing results throughout the training process. This comprehensive approach integrates advanced techniques for developing a powerful image-processing model.
+
+Swin Model parameter:
+ Loss function = Mean Absolute Error
+ Batch Size for training = 32
+ Batch Size for testing = 32
+ Training Epoch = 300
+ Adam Optimizer is used with Learning rate = 0.0001 (1e-4)
+ Test data = 20%
+
+<img src="working.png" alt="Small Image" width="500" height="550"
+
+
 
