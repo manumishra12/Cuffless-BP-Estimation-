@@ -81,7 +81,7 @@ Swin Model parameter:
  Adam Optimizer is used with Learning rate = 0.0001 (1e-4) <br>
  Test data = 20% <br>
 
-<img src="working.png" alt="Small Image" width="900" height="550">
+<img src="working.png" alt="Small Image" width="900" height="650">
 
 
 ### Result
@@ -90,11 +90,11 @@ Swin Model parameter:
 
 #### ECG Dataset
 
-<img src="result.png" alt="Small Image" width="800" height="550">
+<img src="result.png" alt="Small Image" width="800" height="650">
 
 #### PPG Dataset
 
-<img src="result2.png" alt="Small Image" width="800" height="550">
+<img src="result2.png" alt="Small Image" width="800" height="650">
 
 <hr>
 
@@ -102,11 +102,11 @@ Swin Model parameter:
 
 #### ECG Dataset
 
-<img src="result3.png" alt="Small Image" width="800" height="550">
+<img src="result3.png" alt="Small Image" width="800" height="650">
 
 #### PPG Dataset
 
-<img src="result4.png" alt="Small Image" width="800" height="550">
+<img src="result4.png" alt="Small Image" width="800" height="650">
 
 
 ### Conclusion
