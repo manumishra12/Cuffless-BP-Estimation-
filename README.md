@@ -64,9 +64,9 @@ after each module.
 
 #### Architecture 
 
-<img src="swin.png" alt="Small Image" width="700" height="550">
+<img src="swin.png" alt="Small Image" width="900" height="500">
 
-<img src="swin2.png" alt="Small Image" width="700" height="550">
+<img src="swin2.png" alt="Small Image" width="900" height="500">
 
 
 ### Working of our model
@@ -81,7 +81,7 @@ Swin Model parameter:
  Adam Optimizer is used with Learning rate = 0.0001 (1e-4) <br>
  Test data = 20% <br>
 
-<img src="working.png" alt="Small Image" width="700" height="550">
+<img src="working.png" alt="Small Image" width="900" height="550">
 
 
 ### Result
@@ -90,11 +90,11 @@ Swin Model parameter:
 
 #### ECG Dataset
 
-<img src="result.png" alt="Small Image" width="500" height="550">
+<img src="result.png" alt="Small Image" width="800" height="550">
 
 #### PPG Dataset
 
-<img src="result2.png" alt="Small Image" width="500" height="550">
+<img src="result2.png" alt="Small Image" width="800" height="550">
 
 <hr>
 
@@ -102,8 +102,12 @@ Swin Model parameter:
 
 #### ECG Dataset
 
-<img src="result.png" alt="Small Image" width="500" height="550">
+<img src="result3.png" alt="Small Image" width="800" height="550">
 
 #### PPG Dataset
 
-<img src="result2.png" alt="Small Image" width="500" height="550">
+<img src="result4.png" alt="Small Image" width="800" height="550">
+
+
+### Conclusion
+In this project, we successfully employed the Swin Transformer architecture to analyze bispectrum images derived from ECG and PPG signals for predicting systolic (SBP) and diastolic blood pressure (DBP) values. By transforming raw signals into bispectrum images, we captured critical frequency-domain characteristics essential for accurate BP estimation. The Swin Transformer’s hierarchical feature extraction and computational efficiency proved effective for the complex patterns in these images. Our model outperformed traditional machine learning methods, demonstrating high accuracy and reliability. The scalability of the Swin Transformer suggests its potential for real-world healthcare applications, particularly in continuous and non-invasive BP monitoring. This project validates the Swin Transformer’s efficacy in biomedical applications and encourages further research into advanced deep learning models for analyzing other vital signs, contributing to the advancement of personalized and predictive healthcare.
