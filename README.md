@@ -81,7 +81,7 @@ Swin Model parameter:
  Adam Optimizer is used with Learning rate = 0.0001 (1e-4)
  Test data = 20%
 
-<img src="working.png" alt="Small Image" width="500" height="550"
+<img src="working.png" alt="Small Image" width="500" height="550">
 
 
 
